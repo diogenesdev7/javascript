@@ -10,33 +10,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #040404, #333);
+    background-image: linear-gradient(to right, #070707, #383838);
 }
 
 .calculadora {
-    background-color: rgba(255,255,255,.3);
-    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 70px 40px 40px 40px;
     font-size: 1.5rem;
-    box-shadow: 0 0 10px rgba(0,0,0,.5)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+    border-radius: 50px;
+    border: 1px solid #fafafa;
 }
 
 table {
-    border-spacing: 5px;
+    border-spacing: 7px;
 }
 
 .display {
     background-color: greenyellow;
-    margin-bottom: 10px;
-    height: 35px;
+    margin-bottom: 15px;
+    height: 45px;
     padding: 0 10px;
-    line-height: 35px;
+    line-height: 45px;
     text-align: right;
 }
 
 .btn {
     width: 50px;
     height: 50px;
-    background-color: #111;
+    background-color: #1a1a1a;
     color: #fafafa;
     text-align: center;
     border-radius: 8px;
