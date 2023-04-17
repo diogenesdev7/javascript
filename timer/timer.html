@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="timer.css">
 </head>
 <body>
-    <div class="timer" id="timer">00:00:00</div>
+    <div class="content">
+        <div class="timer" id="timer">00:00:00</div>
+        <section class="inputs">
+            <div>
+                <div class="element">
+                    <label for="horas">Horas</label>
+                    <input type="number" id="hours" min="0" max="24" value="00">
+                </div>
+                <div class="element">
+                    <label for="minutos">Minutos</label>
+                    <input type="number" id="minutes" min="0" max="59" value="00">
+                </div>
+                <div class="element">
+                    <label for="segundos">Segundos</label>
+                    <input type="number" id="seconds" min="0" max="59" value="00">
+                </div>
+            </div>
 
-    <section class="inputs">
-        <div class="element">
-            <label for="horas">Horas</label>
-            <input type="number" id="horas" min="0" max="24" value="00">
-        </div>
-
-        <div class="element">
-            <label for="minutos">Minutos</label>
-            <input type="number" id="minutos" min="0" max="59" value="00">
-        </div>
-
-        <div class="element">
-            <label for="segundos">Segundos</label>
-            <input type="number" id="segundos" min="0" max="59" value="00">
-        </div>
-    </section>
+            <button class="iniciar">Iniciar</button>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
