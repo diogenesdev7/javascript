@@ -16,7 +16,8 @@ body {
 
 .content {
     box-shadow: 0 0 25px #49496d;
-    padding: 50px max(50px, 10vw);
+    height: 350px;
+    width: max(450px, 50vw);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -25,7 +26,7 @@ body {
     gap: 25px;
 }
 
-.timer {
+.display {
     font-size: max(4rem, 8vw);
     text-shadow: 0 0 15px #59496d;
 }
