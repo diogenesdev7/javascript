@@ -17,7 +17,7 @@ const timer = (duracao, display) => {
     let timer = duracao
     let horas, minutos, segundos
     
-    setInterval(() => {
+    let tempo = setInterval(() => {
         horas = Math.floor(timer / 60 / 60)
         minutos = Math.floor(timer / 60) - (horas * 60)
         segundos = Math.floor(timer % 60)
@@ -30,8 +30,8 @@ const timer = (duracao, display) => {
         timer --
 
         if (timer < 0) {
-            display.innerHTML = '00:00:00'
             alarme.play()
+            clearInterval(tempo)
         }
     }, 1000)
 }
